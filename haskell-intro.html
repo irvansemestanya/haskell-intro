@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Discover Haskell 98 in 3 hours through progressive exercises for strong-willed souls who learn by doing</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+        body { font-family: sans-serif; }
+        .remark-slide-content { padding: 0em 2em 0em 2em; }
+        .remark-slide-content h1 { font-size: 32pt; font-weight: normal; }
+        .remark-slide-content h2 { font-size: 24pt; font-weight: normal; }
+        .remark-slide-content h3 { font-size: 16pt; }
+        p, ul, li { font-size: 20pt; line-height: 1.5; }
+        .remark-code, .remark-inline-code { font-size: 16pt; font-family: monospace; }
+    </style>
+  </head>
+  <body>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+    <script>
+        /* WORKAROUND */
+        window.onload = function () {
+            var pres = document.getElementsByTagName('pre');
+            pres.forEach(function (e) {
+                e.innerHTML = e.innerHTML.replace(/\\\`/g, '`');
+            });
+        };
+        var slideshow = remark.create({
+            sourceUrl: 'haskell-intro.md'
+            , ratio: '16:9'
+        });
+    </script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}
+        });
+    </script>
+  </body>
+</html>
